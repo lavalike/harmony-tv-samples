@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "tv_samples"
+    },
+    {
+      "name": "mainability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "secondability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "stackability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "dependentability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "networkability_description",
+      "value": "hap sample empty page"
+    }
+  ]
+}

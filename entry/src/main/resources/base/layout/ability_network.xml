@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <Button
+        ohos:id="$+id:btn_request"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:center_in_parent="true"
+        ohos:text="发起请求"
+        ohos:text_size="20fp"/>
+
+</DependentLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#000000"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:italic="true"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="Hello World!"
+        ohos:text_color="white"
+        ohos:text_font="serif"
+        ohos:text_size="50fp"
+        ohos:text_weight="700"/>
+
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="horizontal_center"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:btn_stack_layout"
+                ohos:height="match_content"
+                ohos:width="200vp"
+                ohos:background_element="$graphic:background_button"
+                ohos:below="$+id:text"
+                ohos:bottom_padding="10vp"
+                ohos:horizontal_center="true"
+                ohos:text="StackLayout"
+                ohos:text_alignment="center"
+                ohos:text_color="white"
+                ohos:text_size="20fp"
+                ohos:top_padding="10vp"/>
+
+            <Button
+                ohos:id="$+id:btn_dependent_layout"
+                ohos:height="match_content"
+                ohos:width="200vp"
+                ohos:background_element="$graphic:background_button"
+                ohos:below="$+id:btn_stack_layout"
+                ohos:bottom_padding="10vp"
+                ohos:horizontal_center="true"
+                ohos:text="DependentLayout"
+                ohos:text_alignment="center"
+                ohos:text_color="white"
+                ohos:text_size="20fp"
+                ohos:top_margin="10vp"
+                ohos:top_padding="10vp"/>
+
+
+            <Button
+                ohos:id="$+id:btn_network"
+                ohos:height="match_content"
+                ohos:width="200vp"
+                ohos:background_element="$graphic:background_button"
+                ohos:below="$+id:btn_stack_layout"
+                ohos:bottom_padding="10vp"
+                ohos:horizontal_center="true"
+                ohos:text="network"
+                ohos:text_alignment="center"
+                ohos:text_color="white"
+                ohos:text_size="20fp"
+                ohos:top_margin="10vp"
+                ohos:top_padding="10vp"/>
+        </DirectionalLayout>
+    </ScrollView>
+
+</DirectionalLayout>

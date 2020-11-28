@@ -1,0 +1,88 @@
+{
+  "app": {
+    "bundleName": "com.wangzhen.tv.samples",
+    "vendor": "wangzhen",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.wangzhen.tv.samples",
+    "name": ".tv_samples",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.wangzhen.tv.samples.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "tv_samples",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.wangzhen.tv.samples.StackAbility",
+        "icon": "$media:icon",
+        "description": "$string:stackability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.wangzhen.tv.samples.DependentAbility",
+        "icon": "$media:icon",
+        "description": "$string:dependentability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.wangzhen.tv.samples.NetworkAbility",
+        "icon": "$media:icon",
+        "description": "$string:networkability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "reason": "",
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}
