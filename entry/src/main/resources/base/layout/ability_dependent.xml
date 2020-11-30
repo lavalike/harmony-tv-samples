@@ -25,7 +25,28 @@
         ohos:height="match_parent"
         ohos:width="match_parent"
         ohos:align_top="$+id:container_left"
+        ohos:alignment="center"
         ohos:background_element="#80ff0000"
+        ohos:orientation="vertical"
         ohos:right_of="$+id:container_left"
-        ohos:start_margin="10vp"/>
+        ohos:start_margin="10vp">
+
+        <Text
+            ohos:id="$+id:tv_count"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="click:0"
+            ohos:text_color="white"
+            ohos:text_size="30fp"/>
+
+        <Button
+            ohos:id="$+id:btn_add_count"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="点击"
+            ohos:text_color="white"
+            ohos:text_size="30fp"
+            ohos:top_margin="10vp"/>
+
+    </DirectionalLayout>
 </DependentLayout>

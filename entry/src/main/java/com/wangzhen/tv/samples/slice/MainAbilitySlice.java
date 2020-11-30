@@ -53,6 +53,7 @@ public class MainAbilitySlice extends AbilitySlice implements Component.ClickedL
                 break;
         }
         if (intent != null) {
+            intent.setParam("data", "from main");
             startAbility(intent);
         }
     }
